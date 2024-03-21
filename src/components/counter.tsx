@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export const Counter = () => {
   const [count, setCount] = useState(0);
@@ -13,6 +13,7 @@ export const Counter = () => {
       <button
         onClick={handleIncrement}
         className="rounded-sm bg-black px-2 py-0.5 text-sm text-white"
+        type="button"
       >
         Increment
       </button>

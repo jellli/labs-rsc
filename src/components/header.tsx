@@ -1,4 +1,4 @@
-import { Link } from 'waku';
+import { Link } from "waku";
 
 export const Header = () => {
   return (
@@ -6,7 +6,7 @@ export const Header = () => {
       <h2 className="text-lg font-bold tracking-tight">
         <Link to="/">Labs / Waku</Link>
       </h2>
-      <nav className='flex gap-2'>
+      <nav className="flex gap-2">
         <Link to="/form" className="inline-block underline">
           Form
         </Link>

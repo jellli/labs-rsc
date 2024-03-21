@@ -1,5 +1,5 @@
-"use server"
-import { Counter } from '../components/counter.js';
+"use server";
+import { Counter } from "../components/counter.js";
 
 export default async function HomePage() {
   const data = await getData();
@@ -7,8 +7,8 @@ export default async function HomePage() {
   return (
     <div>
       <title>{data.title}</title>
-      <article className='prose text-sm'>
-        <h2 className='font-bold'>Counter</h2>
+      <article className="prose text-sm">
+        <h2 className="font-bold">Counter</h2>
         <p>use with client component</p>
         <Counter />
       </article>
@@ -18,7 +18,7 @@ export default async function HomePage() {
 
 const getData = async () => {
   const data = {
-    title: 'Labs / Waku',
+    title: "Labs / Waku",
   };
 
   return data;
@@ -26,6 +26,6 @@ const getData = async () => {
 
 export const getConfig = async () => {
   return {
-    render: 'static',
+    render: "static",
   };
 };
