@@ -1,10 +1,6 @@
 "use server"
 import {rerender} from 'waku/server'
 
-const draft = {
-  title: '',
-  content: ''
-};
 const article = {
   title: '',
   content: ''
@@ -12,19 +8,7 @@ const article = {
 
 export const getData = () => {
   return {
-    draft,
     article
-  }
-}
-export const saveDraft = (formData: FormData) => {
-  const title = formData.get('title');
-  const content = formData.get('content');
-  draft.title = title as string;
-  draft.content = content as string;
-  rerender('form');
-  return {
-    success: 1,
-    msg: 'save success'
   }
 }
 export const publish = (formData: FormData) => {
