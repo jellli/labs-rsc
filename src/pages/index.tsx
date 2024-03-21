@@ -1,5 +1,4 @@
-import { Link } from 'waku';
-
+"use server"
 import { Counter } from '../components/counter.js';
 
 export default async function HomePage() {
@@ -11,8 +10,8 @@ export default async function HomePage() {
       <article className='prose text-sm'>
         <h2 className='font-bold'>Counter</h2>
         <p>use with client component</p>
+        <Counter />
       </article>
-      <Counter />
     </div>
   );
 }

@@ -6,7 +6,10 @@ export const Header = () => {
       <h2 className="text-lg font-bold tracking-tight">
         <Link to="/">Labs / Waku</Link>
       </h2>
-      <nav>
+      <nav className='flex gap-2'>
+        <Link to="/form" className="inline-block underline">
+          Form
+        </Link>
         <Link to="/about" className="inline-block underline">
           About Waku
         </Link>
