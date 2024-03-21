@@ -1,3 +1,4 @@
+"use server"
 import { getData, publish, saveDraft } from "../libs/article.js"
 
 const Form = () => {

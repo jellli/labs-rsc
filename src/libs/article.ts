@@ -21,19 +21,18 @@ export const saveDraft = (formData: FormData) => {
   const content = formData.get('content');
   draft.title = title as string;
   draft.content = content as string;
-  rerender('');
+  rerender('form');
   return {
     success: 1,
     msg: 'save success'
   }
 }
 export const publish = (formData: FormData) => {
-  console.log('p')
   const title = formData.get('title');
   const content = formData.get('content');
   article.title = title as string;
   article.content = content as string;
-  rerender('');
+  rerender('form');
   return {
     success: 1,
     msg: 'publish success'
