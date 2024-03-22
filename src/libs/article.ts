@@ -6,11 +6,14 @@ const article = {
   content: "",
 };
 
-export const getData = () => {
-  return {
-    article,
-  };
-};
+export const getData = (): Promise<{ article: typeof article }> =>
+  new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({
+        article,
+      });
+    }, 1000);
+  });
 export const publish = (formData: FormData) =>
   new Promise((resolve) => {
     setTimeout(() => {
